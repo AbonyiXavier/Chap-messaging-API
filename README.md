@@ -9,7 +9,7 @@ A chat web API. It is built on top of NodeJS and Express. It is higly flexible b
 - fetch user by Id 
 - update user profile
 - Soft delete users
-<<<<===>>>>
+
 
 <<<<===>>>>
 - create channels
@@ -24,7 +24,8 @@ A chat web API. It is built on top of NodeJS and Express. It is higly flexible b
 - Fetch messages or conversation in channel 
 - mark message as read 
 - Soft delete message
-<<<<===>>>>
+
+
 
 # Getting Started
 
