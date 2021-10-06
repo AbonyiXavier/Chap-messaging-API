@@ -17,7 +17,6 @@ A chat web API. It is built on top of NodeJS and Express. It is higly flexible b
 - select channel to join
 - View members in channel
 - Soft delete channel
-<<<<===>>>>
 
 <<<<===>>>>
 - Post message in channel
