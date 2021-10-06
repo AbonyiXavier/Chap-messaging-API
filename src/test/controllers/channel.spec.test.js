@@ -20,10 +20,9 @@ let accessToken;
 let channelId;
 
 describe("Channel Endpoint", () => {
-  before((done) => {
-     User.deleteMany({});
-     Channel.deleteMany({});
-    done()
+  before(async () => {
+    await User.deleteMany({});
+    await Channel.deleteMany({});
   });
 
   it("it should register a user successfully", async () => {

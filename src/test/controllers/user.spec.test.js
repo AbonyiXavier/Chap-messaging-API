@@ -15,9 +15,8 @@ let accessToken;
 let userId;
 
 describe("User Endpoint", () => {
-  before((done) => {
-    User.deleteMany({});
-    done()
+  before(async () => {
+    await User.deleteMany({});
   });
   it("it should register a user successfully", async () => {
     const result = await chai

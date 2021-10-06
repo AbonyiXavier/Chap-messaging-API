@@ -22,11 +22,10 @@ let channelId;
 let messageId;
 
 describe("Message Endpoint", () => {
-  before((done) => {
-    User.deleteMany({});
-    Channel.deleteMany({});
-    Message.deleteMany({});
-    done()
+  before(async () => {
+    await User.deleteMany({});
+    await Channel.deleteMany({});
+    await Message.deleteMany({});
   });
 
   it("it should register a user successfully", async () => {
