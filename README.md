@@ -36,6 +36,8 @@ To obtain a copy of this app download or clone the repository at this [url](http
 
 Postman collection documentation link [url](https://documenter.getpostman.com/view/7775892/UUy65PgR)
 
+Heroku link [url](https://chat-messaging-api.herokuapp.com)
+
 # Prerequisites
 
 You must have
@@ -68,8 +70,9 @@ You must have
 - Mongoose (ODM)
 - AWS s3 bucket
 - Mocha and Chai
-- Coveralls
 - Travis CI
+
+
 ## Author
 
 - AbonyiXavier
