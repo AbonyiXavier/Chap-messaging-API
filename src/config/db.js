@@ -12,7 +12,7 @@ const mongooseOptions = {
   useFindAndModify: false,
 }
 
-mongoose.connect(config.db.url, mongooseOptions)
+mongoose.connect(process.env.MONGODB_URI, mongooseOptions)
 
 mongoose.connection.on('connected', () => {
   console.log('Mongo has connected succesfully')

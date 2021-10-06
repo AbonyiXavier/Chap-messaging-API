@@ -51,6 +51,7 @@ You must have
 - Run 'npm install' to install all dependencies
 - Run 'npm run dev' to start the application
 - Run 'npm run test' to run test on the application
+- Run 'npm run seed' to run seed table and dummy data on the database
 - In a browser address bar navigate to ''
 
 # Using Chat Messaging App through a restful client
@@ -65,6 +66,7 @@ You must have
 - Mongodb(database)
 - Mongoose (ODM)
 - AWS s3 bucket
+- Mocha and Chai
 - Coveralls
 - Travis CI
 ## Author

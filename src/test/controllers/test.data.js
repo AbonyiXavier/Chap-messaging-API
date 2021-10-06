@@ -10,4 +10,10 @@ const user2 = {
   password: "123456",
 };
 
-export { user, user2 };
+const channelData = {
+  channelName: "Backend",
+  channelDescription: "Created for inforamtion regarding Backend jobs",
+};
+
+
+export { user, user2, channelData };

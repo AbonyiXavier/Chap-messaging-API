@@ -15,7 +15,7 @@ export const createChannel = async (
     if (availableChannel) {
       return {
         status: false,
-        message: `Retrieve existing channnel ${availableChannel.channelName}`,
+        message: "Retrieve existing channnel",
         data: {
           channelId: availableChannel._id,
           channelName: availableChannel.channelName,
