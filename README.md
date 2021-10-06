@@ -1,5 +1,7 @@
 # Chat-Messaging-API
 
+[![Build Status](https://app.travis-ci.com/AbonyiXavier/Chat-Messaging-API.svg?branch=main)](https://app.travis-ci.com/AbonyiXavier/Chat-Messaging-API)
+
 A chat web API. It is built on top of NodeJS and Express. It is higly flexible because it provides the following features with opportunity to:
 
 <<<<====>>>>
