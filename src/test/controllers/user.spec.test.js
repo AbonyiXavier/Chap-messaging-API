@@ -16,7 +16,7 @@ let userId;
 
 describe("User Endpoint", () => {
   before((done) => {
-    await User.deleteMany({});
+    User.deleteMany({});
     done()
   });
   it("it should register a user successfully", async () => {
