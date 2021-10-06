@@ -5,7 +5,7 @@ import {
   serverErrorResponse,
 } from "../helper/response";
 
-import { createChannel, searchChannels, selectChannelToJoin, viewMembers, deleteChannel } from "../services/channel/channel.service"
+import { createChannel, searchChannels, fetchChannels, selectChannelToJoin, viewMembers, deleteChannel } from "../services/channel/channel.service"
 
 export default class channelController {
   static async createChannels(request, response) {
@@ -48,6 +48,32 @@ export default class channelController {
       let { search } = request.query;
 
       const { status, message, data } = await searchChannels(search)
+
+      if (!status) {
+        return badRequestResponse({
+          response,
+          message,
+        });
+      }
+
+      return successfulResponse({
+        response,
+        message,
+        data,
+      });
+
+    } catch (error) {
+      console.log("err", error);
+      return serverErrorResponse({
+        response,
+        message: "something went wrong",
+      });
+    }
+  }
+
+  static async fetchChannels(request, response) {
+    try {
+      const { status, message, data } = await fetchChannels()
 
       if (!status) {
         return badRequestResponse({

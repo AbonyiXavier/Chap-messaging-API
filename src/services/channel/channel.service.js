@@ -76,6 +76,26 @@ export const searchChannels = async (search) => {
   }
 };
 
+export const fetchChannels = async () => {
+  try {
+    const channel = await Channel.find({deleted: false, __v: 0 })
+      .populate("createdBy")
+      .exec();
+
+    return {
+      status: true,
+      message: "Channels fetched successfully",
+      data: channel,
+    };
+  } catch (error) {
+    console.log("error", error);
+    return {
+      status: false,
+      message: "Something went wrong",
+    };
+  }
+};
+
 export const selectChannelToJoin = async (channelName, loggedUserId) => {
   try {
     const data = new Channel({

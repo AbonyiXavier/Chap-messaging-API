@@ -83,6 +83,17 @@ describe("Channel Endpoint", () => {
     expect(result.body.message).to.be.equal("Channels fetched successfully");
   });
 
+  it("It should fetch channels", async () => {
+    const result = await chai
+      .request(server)
+      .get(`${url}/getchannels`)
+      .set("Accept", "application/json")
+      .set("Authorization", accessToken);
+    expect(result.status).to.equal(200);
+    expect(result.body.status).to.equal(true);
+    expect(result.body.message).to.be.equal("Channels fetched successfully");
+  });
+
   it("It should select channel to join", async () => {
     const result = await chai
       .request(server)
