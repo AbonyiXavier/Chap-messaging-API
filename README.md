@@ -71,6 +71,7 @@ You must have
 - AWS s3 bucket
 - Mocha and Chai
 - Travis CI
+- Deployed on Heroku
 
 
 ## Author
